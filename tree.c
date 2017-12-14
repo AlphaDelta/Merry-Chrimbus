@@ -1,5 +1,6 @@
 #include <windows.h>
 
+#if defined(__TINYC__)
 typedef struct _CONSOLE_SCREEN_BUFFER_INFOEX {
   ULONG      cbSize;
   COORD      dwSize;
@@ -21,6 +22,7 @@ WINBASEAPI WINBOOL WINAPI SetConsoleScreenBufferInfoEx(
   HANDLE hConsoleOutput,
   PCONSOLE_SCREEN_BUFFER_INFOEX lpConsoleScreenBufferInfoEx
 );
+#endif
 
 void setchar(CHAR_INFO *buffer, int pos, CHAR ch, WORD atr) {
 	buffer[pos].Char.AsciiChar = ch;
