@@ -9,7 +9,7 @@ The tree is generated from a constant height variable and coloured lights are ad
 # Compiling
 This is a Windows only program.
 
-It can be compiled very simply with MingW GCC like so: `gcc -o tree.exe tree.c`
+It can be compiled very simply with MingW GCC like so: `gcc -o tree.exe tree.c -m32 -s`
 
 As well as TCC with `tcc -o tree.exe tree.c` providing you add the following lines to `tcc\lib\kernel32.def`:
 
