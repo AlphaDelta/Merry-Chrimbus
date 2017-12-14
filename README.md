@@ -1,6 +1,8 @@
 # 🎄 Merry Chrimbus!
 A colourful Chrimbus tree right in your very own CMD
 
+<img src="https://i.imgur.com/hVgy2ZV.png" />
+
 # Overview
 I wrote this yesterday in C#, then decided to try and rewrite it in C.
 
